@@ -26,7 +26,7 @@
 
   import_key init0 5KVDrKgX3fx9SADYQzQGAQaxwC2pmArpTg9YVNRBhi6v9KttNRr
 
-  import_balance init0 ["5KVDrKgX3fx9SADYQzQGAQaxwC2pmArpTg9YVNRBhi6v9KttNRr"] true
+  import_balance init0 ["5KVDrKgX3fx9SADYQzQGAQaxwC2pmArpTg9YVNRBhi6v9KttNRrlist"] true
 
   get_account init0
 
@@ -35,5 +35,16 @@
   transfer init0 www 500 BTS "here is some cash" true
 
   create_account_with_brain_key "Brain ... key" <accountname> init0 init0 true
+
+  reserve_asset init0 100 BTS true
+  fund_asset_fee_pool init0 BTS 100 true
+
+  vote_for_committee_member init2 init2 true true
+
+  propose_parameter_change init0 "20171019T133030"  {"block_interval" : 10} true
+  approve_proposal init0 1.10.0 {"active_approvals_to_add" : ["init0"]} true
+  approve_proposal init1 1.10.0 {"active_approvals_to_add" : ["init1"]} true
+  approve_proposal init2 1.10.0 {"active_approvals_to_add" : ["init2"]} true
   ```
+
 
