@@ -45,6 +45,10 @@
   approve_proposal init0 1.10.0 {"active_approvals_to_add" : ["init0"]} true
   approve_proposal init1 1.10.0 {"active_approvals_to_add" : ["init1"]} true
   approve_proposal init2 1.10.0 {"active_approvals_to_add" : ["init2"]} true
+
+  propose_parameter_change init0 "20171019T133030" {"block_interval" : 20} true
+  propose_fee_change init0 "20170930T052800" { 0 : { "fee" : 200000, "price_per_kbyte" : 0 } } true
+  approve_proposal init0 "1.10.0" {"active_approvals_to_add" : ["test2"]} true
   ```
 
 
