@@ -52,3 +52,9 @@
   ```
 
 
+* iOS build
+
+```
+build.py --toolchain ios-nocodesign-11-0 --config Debug --fwd BOOST_ROOT=/Users/walker/tmp/boost OPENSSL_ROOT_DIR=/Users/walker/tmp/ssl
+```
+
